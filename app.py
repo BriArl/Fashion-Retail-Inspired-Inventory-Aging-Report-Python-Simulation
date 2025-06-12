@@ -22,4 +22,4 @@ if uploaded_file:
 
     df['aging_bucket'] = df['days_old'].apply(get_buckets)
 
-    
+    st.success("Report Generated")
