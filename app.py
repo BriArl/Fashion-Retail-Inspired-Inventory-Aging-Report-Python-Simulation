@@ -10,3 +10,13 @@ if uploaded_file:
     today = pd.Timestamp.today()
     df['days_old'] = (today - df['last_movement_date']).dt.days
 
+    def get_buckets(days):
+        if days <= 30:
+            return "0-30 days"
+        elif days <= 60:
+            return "31-60 days"
+        elif days <= 90:
+            return "61-90 days"
+        else:
+            return ">90 days"
+
