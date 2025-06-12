@@ -20,3 +20,6 @@ if uploaded_file:
         else:
             return ">90 days"
 
+    df['aging_bucket'] = df['days_old'].apply(get_buckets)
+
+    
