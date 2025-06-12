@@ -23,3 +23,7 @@ if uploaded_file:
     df['aging_bucket'] = df['days_old'].apply(get_buckets)
 
     st.success("Report Generated")
+
+    st.subheader("Inventory Aging Summary")
+    st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_buckets']])
+    
