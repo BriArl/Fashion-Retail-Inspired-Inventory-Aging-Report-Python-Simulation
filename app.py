@@ -31,7 +31,7 @@ if uploaded_file:
         st.download_button(
             label ="Download Sample Inventory CSV",
             data=f,
-            file_name = "sample_inventory.csv",
+            file_name = "Sample_inventory.csv",
             mime="text/csv"
         )
 
