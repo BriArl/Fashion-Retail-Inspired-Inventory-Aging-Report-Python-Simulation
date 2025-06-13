@@ -27,6 +27,8 @@ A simple, interactive Python tool that analyzes fashion retail inventory and ide
 - **Streamlit**
 - **CSV** (no database just yet)
 
+---
+Live app: https://fashion-retail-inspired-inventory-aging-report-python-simulati.streamlit.app/
 
 
 
