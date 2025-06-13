@@ -26,4 +26,6 @@ if uploaded_file:
 
     st.subheader("Inventory Aging Summary")
     st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_buckets']])
-    
+
+    csv = df.to_csv(index=False).encode()
+    st.download_button("Download", data-csv, file_name="aging_report.csv", mime='text/csv')
