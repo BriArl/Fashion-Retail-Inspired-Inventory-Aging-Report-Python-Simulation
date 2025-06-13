@@ -1,5 +1,8 @@
 import pandas as pd
 import streamlit as st
+from utils import load_css
+
+load_css("styles.css")
 
 st.title("Retail Inventory Aging Report")
 
