@@ -1,0 +1,9 @@
+material,description,category,store,location,quantity,last_movement_date
+PRD001,Blue Denim Jacket,Jackets,Barcelona,ST01,30,2025-06-01
+PRD002,White T-Shirt,Tops,Madrid,ST02,120,2025-05-25
+PRD003,Black Slim Jeans,Bottoms,Valencia,ST01,80,2025-04-20
+PRD004,Floral Dress,Dresses,Seville,ST03,60,2025-03-15
+PRD005,Leather Boots,Shoes,Bilbao,ST02,40,2025-06-05
+PRD006,Graphic Tee,Tops,Barcelona,ST01,100,2025-01-30
+PRD007,Denim Skirt,Bottoms,Madrid,ST02,90,2025-02-10
+PRD008,Summer Maxi Dress,Dresses,Seville,ST03,55,2025-05-01
