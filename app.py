@@ -25,7 +25,7 @@ if uploaded_file:
     st.success("Report Generated")
 
     st.subheader("Inventory Aging Summary")
-    st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_buckets']])
+    st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_bucket']])
 
     csv = df.to_csv(index=False).encode()
     st.download_button("Download", data-csv, file_name="aging_report.csv", mime='text/csv')
