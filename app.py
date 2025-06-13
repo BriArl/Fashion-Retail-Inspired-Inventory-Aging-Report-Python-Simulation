@@ -27,5 +27,13 @@ if uploaded_file:
     st.subheader("Inventory Aging Summary")
     st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_bucket']])
 
+    with open("Sample_inventory.csv", "rb") as f:
+        st.download_button(
+            label ="Download Sample Inventory CSV",
+            data=f,
+            file_name = "sample_inventory.csv",
+            mime="text/csv"
+        )
+
     csv = df.to_csv(index=False).encode()
     st.download_button("Download", data=csv, file_name="aging_report.csv", mime='text/csv')
