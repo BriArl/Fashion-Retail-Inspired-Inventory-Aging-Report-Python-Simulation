@@ -28,4 +28,4 @@ if uploaded_file:
     st.dataframe(df[['material', 'description', 'category', 'store', 'quantity', 'days_old', 'aging_bucket']])
 
     csv = df.to_csv(index=False).encode()
-    st.download_button("Download", data_csv, file_name="aging_report.csv", mime='text/csv')
+    st.download_button("Download", data=csv, file_name="aging_report.csv", mime='text/csv')
