@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Retail Inventory Aging Report")
 
-with open("Sample_inventory.csv", "rb") as f:
+with open("sample_inventory.csv", "rb") as f:
         st.download_button(
             label ="Download Sample Inventory CSV",
             data=f,
