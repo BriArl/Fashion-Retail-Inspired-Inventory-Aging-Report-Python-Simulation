@@ -25,7 +25,7 @@ A simple, interactive Python tool that analyzes fashion retail inventory and ide
 - **Python**
 - **Pandas**
 - **Streamlit**
-- **CSV** (no database required as of yet)
+- **CSV** (no database just yet)
 
 
 
